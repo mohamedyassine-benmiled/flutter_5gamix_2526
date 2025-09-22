@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: "Workshops 5GamiX", home: Home()
-        // home: Signup()
+    return const MaterialApp(title: "Workshops 5GamiX", //home: Home()
+        home: Signup()
         // home: ProductDetails(
         //     "assets/images/dmc5.jpg",
         //     "Devil May Cry 5",
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         //         "eu fugiat nulla pariatur. Excepteur sint occaecat "
         //         "cupidatat non proident, sunt in culpa qui officia "
         //         "deserunt mollit anim id est laborum.",
-        //     200)
+        //     200, 3000)
         );
   }
 }
