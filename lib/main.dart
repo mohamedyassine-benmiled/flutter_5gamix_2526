@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'product_info.dart';
+import 'product_details.dart';
+import 'signup.dart';
+import 'home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,22 +13,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "G-Store ESPRIT",
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("G-Store ESPRIT"),
-        ),
-        body: Column(
-          children: [
-            ProductInfo("assets/images/dmc5.jpg", "Devril May Cry 5", 200),
-            ProductInfo("assets/images/re8.jpg", "Resident Evil VIII", 200),
-            ProductInfo("assets/images/nfs.jpg", "NFS Heat", 100),
-            ProductInfo("assets/images/rdr2.jpg", "RDR 2", 150),
-            ProductInfo("assets/images/fifa.jpg", "FIFA 22", 100),
-          ],
-        )
-      ),
-    );
+    return const MaterialApp(title: "Workshops 5GamiX", home: Home()
+        // home: Signup()
+        // home: ProductDetails(
+        //     "assets/images/dmc5.jpg",
+        //     "Devil May Cry 5",
+        //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
+        //         "sed do eiusmod tempor incididunt ut "
+        //         "labore et dolore magna aliqua. Ut enim ad minim veniam, "
+        //         "quis nostrud exercitation ullamco laboris nisi ut "
+        //         "aliquip ex ea commodo consequat. Duis aute irure dolor "
+        //         "in reprehenderit in voluptate velit esse cillum dolore "
+        //         "eu fugiat nulla pariatur. Excepteur sint occaecat "
+        //         "cupidatat non proident, sunt in culpa qui officia "
+        //         "deserunt mollit anim id est laborum.",
+        //     200)
+        );
   }
 }
