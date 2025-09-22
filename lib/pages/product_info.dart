@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ProductInfo extends StatelessWidget {
-  final String _url;
-  final String _title;
-  final int _price;
+import '../entities/game.dart';
 
-  const ProductInfo(this._url, this._title, this._price, {super.key});
+class ProductInfo extends StatelessWidget {
+  final Game _game;
+
+  const ProductInfo(this._game, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class ProductInfo extends StatelessWidget {
           Container(
             margin: const EdgeInsets.all(10),
             child: Image.asset(
-              _url,
+              _game.image,
               width: 200,
               height: 110,
             ),
@@ -26,9 +26,9 @@ class ProductInfo extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(_title),
+              Text(_game.title),
               Text(
-                "$_price TND",
+                "${_game.price} TND",
                 textScaleFactor: 2,
               )
             ],
