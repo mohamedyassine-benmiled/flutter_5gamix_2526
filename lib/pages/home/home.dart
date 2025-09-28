@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../entities/game.dart';
+import '../../entities/game.dart';
 import 'product_info.dart';
 
 class Home extends StatefulWidget {

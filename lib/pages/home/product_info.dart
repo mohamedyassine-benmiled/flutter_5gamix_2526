@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../entities/game.dart';
+import '../../entities/game.dart';
 
 class ProductInfo extends StatelessWidget {
   final Game _game;

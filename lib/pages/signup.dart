@@ -9,7 +9,7 @@ class Signup extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Inscription"),
       ),
-      body: Column(
+      body: ListView(
         children: [
           Container(
               width: double.infinity,
