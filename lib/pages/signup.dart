@@ -9,7 +9,9 @@ class Signup extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Inscription"),
       ),
-      body: Column(
+      body: SingleChildScrollView(
+
+      child: Column(
         children: [
           Container(
               width: double.infinity,
@@ -63,6 +65,7 @@ class Signup extends StatelessWidget {
           )
         ],
       ),
+    )
     );
   }
 }

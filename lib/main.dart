@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gstore_esprit/pages/auth.dart';
+import 'package:gstore_esprit/pages/library.dart';
 
 import 'pages/product_details.dart';
 import 'pages/signup.dart';
@@ -14,7 +16,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(title: "Workshops 5GamiX", //home: Home()
-        // home: Signup()
+      //home: Auth()
+        //home: Library()
+        home: Signup()
+        /*
         home: ProductDetails(
             "assets/images/dmc5.jpg",
             "Devil May Cry 5",
@@ -28,6 +33,8 @@ class MyApp extends StatelessWidget {
                 "cupidatat non proident, sunt in culpa qui officia "
                 "deserunt mollit anim id est laborum.",
             200, 3000)
+         */
+
         );
   }
 }
