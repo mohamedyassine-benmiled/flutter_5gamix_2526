@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'pages/reset_password.dart';
+import 'pages/profile_settings.dart';
+import 'pages/cart_page.dart';
 
 import 'pages/library/my_games.dart';
 import 'pages/product_details.dart';
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(title: "Workshops 5GamiX", //home: Home()
-        home: Signup()
+        home: CartPage()
         // home: Signin()
         // home: MyGames()
         // home: ProductDetails(
